@@ -13,9 +13,9 @@ description: Build and work with the Filament Simple Analytics plugin — settin
 
 ## Package Overview
 
-- **Package**: `jeffersongoncalves/filament-simple-analytics` (branch `2.x`)
+- **Package**: `jeffersongoncalves/filament-simple-analytics` (branch `3.x`)
 - **Namespace**: `JeffersonGoncalves\Filament\SimpleAnalytics`
-- **Dependencies**: `jeffersongoncalves/filament-analytics-core:^2.0`, `jeffersongoncalves/laravel-simple-analytics:^1.0`
+- **Dependencies**: `jeffersongoncalves/filament-analytics-core:^3.0`, `jeffersongoncalves/laravel-simple-analytics:^1.0`
 
 ## Setup
 

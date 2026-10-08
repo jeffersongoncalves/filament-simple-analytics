@@ -6,7 +6,7 @@ Filament plugin for Simple Analytics with a settings page powered by Spatie Lara
 
 @verbatim
 <code-snippet name="Install the plugin" lang="bash">
-composer require jeffersongoncalves/filament-simple-analytics:"^2.0"
+composer require jeffersongoncalves/filament-simple-analytics:"^3.0"
 php artisan vendor:publish --tag=simple-analytics-settings-migrations
 php artisan migrate
 </code-snippet>

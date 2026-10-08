@@ -1,6 +1,6 @@
 <div class="filament-hidden">
 
-![Filament Simple Analytics](https://raw.githubusercontent.com/jeffersongoncalves/filament-simple-analytics/2.x/art/jeffersongoncalves-filament-simple-analytics.png)
+![Filament Simple Analytics](https://raw.githubusercontent.com/jeffersongoncalves/filament-simple-analytics/3.x/art/jeffersongoncalves-filament-simple-analytics.png)
 
 </div>
 
@@ -9,7 +9,7 @@
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support-FFDD00?style=flat-square&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/jeffersongoncalves)
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/jeffersongoncalves/filament-simple-analytics.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-simple-analytics)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/filament-simple-analytics/fix-php-code-style-issues.yml?branch=2.x&label=code%20style&style=flat-square)](https://github.com/jeffersongoncalves/filament-simple-analytics/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3A2.x)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/filament-simple-analytics/fix-php-code-style-issues.yml?branch=3.x&label=code%20style&style=flat-square)](https://github.com/jeffersongoncalves/filament-simple-analytics/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3A3.x)
 [![Total Downloads](https://img.shields.io/packagist/dt/jeffersongoncalves/filament-simple-analytics.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-simple-analytics)
 [![License](https://img.shields.io/packagist/l/jeffersongoncalves/filament-simple-analytics.svg?style=flat-square)](LICENSE.md)
 
@@ -28,7 +28,7 @@ Built on top of [jeffersongoncalves/laravel-simple-analytics](https://github.com
 ## Installation
 
 ```bash
-composer require jeffersongoncalves/filament-simple-analytics:"^2.0"
+composer require jeffersongoncalves/filament-simple-analytics:"^3.0"
 ```
 
 Publish the settings migrations and run them:
@@ -71,7 +71,7 @@ To render the script outside Filament, add `@include('simple-analytics::script')
 ## Requirements
 
 - PHP 8.2 or higher
-- Filament 4.x
+- Filament 5.x
 
 ## Changelog
 
