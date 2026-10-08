@@ -2,25 +2,25 @@
 
 namespace JeffersonGoncalves\Filament\SimpleAnalytics\Pages;
 
-use Filament\Forms\Components\Section;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
-use Filament\Forms\Form;
 use Filament\Pages\SettingsPage;
+use Filament\Schemas\Components\Section;
+use Filament\Schemas\Schema;
 use JeffersonGoncalves\SimpleAnalytics\Settings\SimpleAnalyticsSettings;
 
 class ManageSimpleAnalyticsSettings extends SettingsPage
 {
     protected static string $settings = SimpleAnalyticsSettings::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-chart-bar';
+    protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-chart-bar';
 
     public static function getNavigationLabel(): string
     {
         return __('filament-simple-analytics::pages.navigation_label');
     }
 
-    public static function getNavigationGroup(): ?string
+    public static function getNavigationGroup(): string|\UnitEnum|null
     {
         return __('filament-simple-analytics::pages.navigation_group');
     }
@@ -30,9 +30,10 @@ class ManageSimpleAnalyticsSettings extends SettingsPage
         return __('filament-simple-analytics::pages.title');
     }
 
-    public function form(Form $form): Form
+    public function form(Schema $schema): Schema
     {
-        return $form
+        return $schema
+            ->columns(null)
             ->schema([
                 Section::make(__('filament-simple-analytics::pages.sections.simple_analytics.heading'))
                     ->description(__('filament-simple-analytics::pages.sections.simple_analytics.description'))
