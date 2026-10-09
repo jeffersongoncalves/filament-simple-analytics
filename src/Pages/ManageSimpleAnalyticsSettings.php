@@ -7,6 +7,7 @@ use Filament\Forms\Components\Toggle;
 use Filament\Pages\SettingsPage;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema;
+use JeffersonGoncalves\FilamentAnalyticsCore\AbstractAnalyticsPlugin;
 use JeffersonGoncalves\SimpleAnalytics\Settings\SimpleAnalyticsSettings;
 
 class ManageSimpleAnalyticsSettings extends SettingsPage
@@ -22,7 +23,7 @@ class ManageSimpleAnalyticsSettings extends SettingsPage
 
     public static function getNavigationGroup(): string|\UnitEnum|null
     {
-        return __('filament-simple-analytics::pages.navigation_group');
+        return AbstractAnalyticsPlugin::navigationGroupFor('filament-simple-analytics') ?? __('filament-simple-analytics::pages.navigation_group');
     }
 
     public function getTitle(): string
